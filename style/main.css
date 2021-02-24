@@ -1,0 +1,104 @@
+:root {
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px; 
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.95em;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*a partir daqui é o filme principal*/
+
+.container {
+    margin-left: 15px;
+}
+
+main .center-movie {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(../img/capa-stranger-things2.jpg);
+
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main .center-movie .subtitle{
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+main .title{
+    margin-top: 15%;
+    font-size: 40px;
+}
+
+main .button {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color:white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+main .button:hover{
+    background-color: white;
+    color: black;
+}
+
+main .button i{
+    margin-right: 8px;
+}
+
+.center-movie .container{
+    width: 70%;
+}
+
+.box-film{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-movies{
+    margin-top: 5px;
+}
